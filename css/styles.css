@@ -57,8 +57,8 @@ footer .copyright {
   flex-direction: column;
 }
 
-img .nav-logo {
-  /* align-self: center; */
+.nav-logo {
+  align-items: center;
   max-width: 200px;
 }
   
