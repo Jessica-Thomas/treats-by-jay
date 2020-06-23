@@ -7,10 +7,11 @@ body {
   font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
+  background-image:url(../images/baked-doodle.png);
   }
 
 header {
-  background: linear-gradient(to bottom, gray, white);
+  /* background: linear-gradient(to bottom, gray, white); */
   margin: 0 0 7px 0;
   padding: 0;
   text-align: center;
@@ -20,7 +21,7 @@ header {
 footer {
   min-height: 20px;
   padding: 20px;
-  background: linear-gradient(to bottom, white, gray);
+  /* background: linear-gradient(to bottom, white, gray); */
   /* position: fixed; */
 }
 
@@ -102,9 +103,9 @@ footer .copyright {
    
 .carousel {
   text-align: center;
-  padding: 4px;
-  max-width: 300px;
-  max-height: 300px;
+  padding: auto;
+  /* max-width: 300px;
+  max-height: 300px; */
 
 }
 
@@ -114,8 +115,9 @@ footer .copyright {
 }
 
 .treat {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
 }
 
 
