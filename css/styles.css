@@ -84,10 +84,9 @@ footer .copyright {
 .nav,
 .nav-logo {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   padding: 5px;
-  text-align: center;
 }
 
 .nav-logo {
@@ -114,14 +113,6 @@ footer .copyright {
   flex-wrap: wrap;
 }
    
-.carousel {
-  text-align: center;
-  padding: auto;
-  /* max-width: 300px;
-  max-height: 300px; */
-
-}
-
 .body {
   padding: 3px 15px;
   margin: auto;
@@ -133,6 +124,14 @@ footer .copyright {
   border-radius: 50%;
 }
 
+/* Image Carousel */
+.carousel {
+  text-align: center;
+  padding: auto;
+  width: 300px;
+  height: 300px;
+
+}
 
 
 
