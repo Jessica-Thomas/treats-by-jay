@@ -13,11 +13,10 @@ function slide(){
 
 while (true){
 
-    if(i < slide.legnth - 1); {
+    if(i < slide.length - 1); {
     i++;
     } else; {
    		i=0; 
-
     }
     }
 

@@ -21,15 +21,13 @@ body {
   }
 
 header {
-  margin: 0;
-  padding: 0;
   text-align: center;
   padding-top: 10px;
-  max-height: 180px;
+  max-height: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 0 1 auto;
+  flex: 0 1 fit-content;
   align-content: center;
 
 }
@@ -52,9 +50,10 @@ h4 {
 /* Contact form */
 .contact-form {
   max-width: 350px;
+  min-width: 250px;
   object-position: center;
-  margin-left: 30%;
-  margin-right: 10px;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 input,
@@ -103,19 +102,21 @@ footer .copyright {
 .main-nav li {
   list-style: none;
   margin: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
   
 .nav a {
   box-shadow: 2px white;
   inset: 5px white;
-  font-size: 1.75em;    
+  font-size: 1.2em;    
   background-color: #7f36d5;
   color: white;
   padding: 5px 10px;
   margin: 10px 5px;
   border-radius: 5px;
   flex-direction: row;
-  max-width: 105px;
+  /* max-width: 105px; */
   text-decoration: none;
   flex-wrap: wrap;
 }
@@ -129,6 +130,7 @@ footer .copyright {
   max-width: 250px;
   max-height: 250px;
   border-radius: 50%;
+  display: none;
 }
 
 .menu-note {
