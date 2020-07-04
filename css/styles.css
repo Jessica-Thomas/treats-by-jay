@@ -1,4 +1,4 @@
-/* Global Styles  */
+/* UNIVERSAL STYLING*/
 * { 
   box-sizing: border-box;
 } 
@@ -15,8 +15,6 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  margin: 0;
-  padding: 0;
   background-image:url(../images/baked-doodle.png);
   }
 
@@ -26,16 +24,7 @@ header {
   max-height: 200px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  flex: 0 1 fit-content;
   align-content: center;
-
-}
-
-footer {
-  min-height: 20px;
-  padding: 20px;
-
 }
 
 h1, 
@@ -44,21 +33,25 @@ h3,
 h4 {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
-  padding-left: 12px;
 }
 
-/* Contact form */
+footer .copyright {
+  font-size: .75em;
+}
+
+
+/*CONTACT FORM*/
 .contact-form {
-  min-width: 350px;
+  max-width: 350px;
   object-position: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 input,
 textarea {
   font-weight: 300; 
-  width: 100%;
+  /* width: 100%; */
   border: none;
   padding: 15px;
   margin-bottom: 1%;
@@ -66,9 +59,13 @@ textarea {
   background-color: #E8DDFF;
 }
 
+.fieldWidth { 
+  width: 100%;
+}
 
 
-/*Links*/
+
+/*LINK STYLING*/
 a:visited {
   color: purple;
 }
@@ -78,21 +75,7 @@ a:hover {
   
  
   
-/* Class Styles */
-footer .copyright {
-  margin-right: 20px;
-  font-size: .75em;
-}
-
-/* .main-nav, 
-.nav,
-.nav-logo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 5px;
-} */
-
+/*NAV STYLING*/
 .nav-logo {
   max-width: 175px;
   max-height: 175px;
@@ -115,48 +98,52 @@ footer .copyright {
   margin: 10px 5px;
   border-radius: 5px;
   flex-direction: row;
-  /* max-width: 105px; */
   text-decoration: none;
-  flex-wrap: wrap;
-}
-   
-.body {
-  padding: 3px 15px;
-  margin: auto;
 }
 
+
+/* MENU PAGE STYLING*/
 .treat {
   max-width: 250px;
   max-height: 250px;
   border-radius: 50%;
-  display: none;
+  object-position: center;
 }
 
 .menu-note {
   font-size: .9em;
   margin: 0;
-
 }
 
 ul .menu-items{
   padding: 0;
+  margin: 0;
 }
 
-/* Image Carousel */
+.menu-header {
+  margin-bottom: 0;
+}
+
+/*IMAGE CAROUSEL*/
 .carousel {
   text-align: center;
   padding: auto;
   width: 300px;
   height: 300px;
-
 }
 
 
 
+/*MEDIA QUERIES*/
+@media (max-width: 699px) {
+  .treat {
+    display: none;
+  }
+}
 
-/* MEDIA QUERIES */
-@media (min-width: 600px){
-  /* 769px or wider */
+
+@media (min-width: 700px){
+  /* 700px or wider */
   .main-nav, 
   .nav,
   .nav-logo{
@@ -165,27 +152,21 @@ ul .menu-items{
     flex-direction: row;
     justify-content: space-between;
   }
+
   .col1,
   .col3 {
     display: flex;
     flex-direction: column;
-    flex-flow: row;
-    
+    justify-content: space-evenly;
+    flex-flow: row wrap;
   }
-.menu1,
-.menu2,
-.menu3,
-.menu4 {
-  display: flexbox;
-}
 
-.contact-form {
-  max-width: 350px;
-  object-position: center;
-  margin-left: 30%;
-  margin-right: 10px;
+  .grid {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-}
 }
 
 
@@ -198,12 +179,7 @@ ul .menu-items{
     flex-direction: row;
     /* justify-content: space-between; */
   }
-  .contact-form {
-    max-width: 350px;
-    object-position: center;
-    margin-left: 30%;
-    margin-right: 10px;
-  }
+  
 }
 
 
