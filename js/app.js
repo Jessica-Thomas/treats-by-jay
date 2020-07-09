@@ -1,40 +1,27 @@
 // CAROUSEL
+var slideIndex = 1;
+showSlides(slideIndex);
 
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelector('.carousel-slide img');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-// buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// counter
-let counter = 1;
-const size = carouselImages[0].clientWidth;
-
-
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-nextBtn.addEventListenter('click', () =>  {
-    // if (counter <= 0, return)
-    carouselSlide.style.transition = "transform 0.4s ease-in-out"
-    counter++;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-});
-
-prevBtn.addEventListenter('click', () =>  {
-    carouselSlide.style.transition = "transform 0.4s ease-in-out"
-    counter--;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-});
-
-carouselSlide.addEventListener('transitionend', () => {
-    if (carouselImages[counter].id === 'lastClone') {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length -2;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-
-    }
-})
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";  
+  dots[slideIndex-1].className += " active";
+}

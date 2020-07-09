@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>Treats By Jay</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/app.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald:wght@300&display=swap" rel="stylesheet">
 
@@ -26,29 +27,34 @@
       <div class="body">
         <h1>Pull up a chair and get ready to eat your feelings.</h1>
           
-          <p>Welcome to the bakery! We have a mulitude of treats.</p>
-
-          <div class="carousel-container">
-            <div class="carousel-slide">
-              <img class="carousel-slide" src="images/meringue.jpg" id="lastClone">
-              <img class="carousel-slide" src="images/63-days.png">
-              <img class="carousel-slide" src="images/carrot-cake.JPG">
-              <img class="carousel-slide" src="images/coral-flower-cake.jpg">
-              <img class="carousel-slide" src="images/three-cupcakes.jpg">
-              <img class="carousel-slide" src="images/meringue.jpg">
-              <img class="carousel-slide" src="images/63-days.png" id="firstClone">
-            </div>
-
-              <button id="prevBtn">Prev</button>
-              <button id="nextBtn">Next</button>         
-          </div>
-
-
           <div class="">
+            <p>Welcome to the bakery! We have a mulitude of treats.</p>
+
             <p>There's no denying-- just about anything made from scratch is infitely better than a boxed mix. At Treats by Jay, everything is made from scratch!</p>
             
             <p>Check out our <a href="menu.html">menu</a> to see what's currently in the oven!</p> 
           </div> 
+
+          <div class="carousel-container float">
+              <img class="mySlides" src="images/63-days.png">
+              <img class="mySlides" src="images/carrot-cake.JPG">
+              <img class="mySlides" src="images/coral-flower-cake.jpg">
+              <img class="mySlides" src="images/three-cupcakes.jpg">
+              <img class="mySlides" src="images/meringue.jpg">
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>        
+          </div>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+          </div>
+
+
     </div>
 </main>
 
