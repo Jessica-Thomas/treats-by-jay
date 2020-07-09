@@ -151,6 +151,7 @@ ul .menu-items{
   max-height: 400px;
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 
 .mySlides {
