@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>Treats By Jay</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="app.js"></script>
+  <script src="js/app.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -39,13 +39,14 @@
            <label for="msg">Message:</label>
            <textarea class="fieldWidth" id="msg" rows="10" required="required"></textarea>
 
-            <div class="checkboxes">
-              <label for="checkboxes">Contact Preference:<br>
-                <input type="checkbox" id="phonecheck" value="yes">Phone<br>
-                <input type="checkbox" id="emailcheck" value="yes">Email<br>
-              </label>
-            </div>
-            <input class="fieldWidth" type="submit" value="Submit">
+            <label for="contact">Contact Preference:</label>
+            <select id="contact" name="Contact Preference">
+              <optgroup label="Contact Preference">
+                <option alue="Email">Email</option>
+                <option value="Phone">Phone</option>
+              </optgroup>
+              </select>
+              <input class="fieldWidth" id="submit" type="submit" value="Submit" onclick="onSubmit()">
         </form>
      </div>
     </main>

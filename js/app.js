@@ -25,3 +25,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+// SUBMIT ALERT
+
+function onSubmit() {
+
+    if { 
+
+    } else {
+          alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
+    }
+}
