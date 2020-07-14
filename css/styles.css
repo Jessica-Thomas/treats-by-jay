@@ -13,30 +13,22 @@
   flex: 1;
 }
 
-.body {
-<<<<<<< HEAD
+..body {
   margin-left: 12px;
-=======
-  margin: 0 12px 0 12px
->>>>>>> parent of b7fa7c8... updated some css
 }
-
-
-
 
 body {
   font-family: 'Oswald', sans-serif;
   background-image:url(../images/baked-doodle.png);
+  font-size: 1em;
   }
 
 header {
-  padding-top: 10px;
-  max-height: 200px;
   display: flex;
   flex-direction: row;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
   margin-bottom: 5px;
@@ -47,27 +39,11 @@ footer .copyright {
   font-size: .75em;
 }
 
-/* GRID */
-.item {
-  margin: 5px;
-}
-
-<<<<<<< HEAD
-img .treat {
-  display: flex;
-  justify-self: center;
-  vertical-align: center;
-  object-position: center;
-=======
-
 
 /* MENU GRID */
 div .item {
   margin: 10px;
->>>>>>> parent of b7fa7c8... updated some css
 }
-
-
 
 /*CONTACT FORM*/
 .contact-form {
@@ -90,10 +66,9 @@ input, textarea {
   width: 100%;
 }
 
-#emailcheck, #phonecheck {
-  margin-right: 7px;
+#submit{
+  margin-top: 15px;
 }
-
 
 
 /*LINK STYLING*/
@@ -142,7 +117,6 @@ a:hover {
 
 .treat:hover {
   transform: scale(1.25);
-  rotate: 35deg;
 }
 
 .menu-note {
@@ -165,16 +139,17 @@ ul .menu-items{
 /*IMAGE CAROUSEL*/
 
 .carousel-container {
-  max-width: 400px;
-  max-height: 400px;
+  width: 250px;
+  height: 250px;
   position: relative;
   margin: auto;
   overflow: hidden;
 }
 
 .mySlides {
-  max-width: 400px;
-  max-height: 400px;
+  width: 250px;
+  height: 250px;
+  border-radius: 25%;
 }
 
 .prev, .next {
@@ -184,10 +159,9 @@ ul .menu-items{
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: black;
+  color: #6633ff;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 
 .next {
@@ -201,7 +175,7 @@ ul .menu-items{
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255, 255, 255, 0.247);
 }
 
 .dot {
@@ -209,21 +183,21 @@ ul .menu-items{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  background-color: #E8DDFF;
+  border-radius: 50%; 
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-<<<<<<< HEAD
-=======
+
 .dot-style{
   text-align:center;
 }
->>>>>>> parent of b7fa7c8... updated some css
 
 .active, .dot:hover {
   background-color: #6633ff;
 }
+
+
 
 
 
@@ -252,43 +226,15 @@ ul .menu-items{
     display: none;
   }
 
-  div .grid-treat {
-    align-self: center;
+  /* INDEX GRID */
+  .grid-2col {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
   }
 
-<<<<<<< HEAD
-}
-=======
-/* INDEX GRID */
-.grid-2col {
-  display: grid;
-  max-width: 1000px;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 5px;
-}
-
-
-/* ABOUT PAGE */
-
-.about-div {
-  display: inline-block;
-}
-
-.about {
-  width: 350px;
-  height: 250px;
-  border-radius: 25%;
-  float: right;
 }
 
 
 
-
-
-
-
-}
-
-
-
->>>>>>> parent of b7fa7c8... updated some css

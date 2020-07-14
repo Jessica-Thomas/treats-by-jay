@@ -25,22 +25,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-<<<<<<< HEAD
 
 
 // SUBMIT ALERT
 
-// function validateForm() {
+// function onSubmit() {
 
-//     if (document.getElementsByClassName("fieldWidth").value == ______) { 
-// //  what i want to say:: if required fields are complete
-
-//           alert('There are required fields missing. Check yo self.')
-
+//     if { 
+//           alert('Required field(s) missing. Check yo self')
 //     } else {
-//       function onSubmit
 //           alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
 //     }
 // }
-=======
->>>>>>> parent of b7fa7c8... updated some css
