@@ -29,12 +29,15 @@ function showSlides(n) {
 
 // SUBMIT ALERT
 
-function validateForm() {
+// function validateForm() {
 
-    if (document.getElementsByClassName("fieldWidth").value == ______) { 
+//     if (document.getElementsByClassName("fieldWidth").value == ______) { 
+// //  what i want to say:: if required fields are complete
 
-    } else {
-      function onSubmit
-          alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
-    }
-}
+//           alert('There are required fields missing. Check yo self.')
+
+//     } else {
+//       function onSubmit
+//           alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
+//     }
+// }
