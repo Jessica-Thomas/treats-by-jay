@@ -22,6 +22,19 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "flex";  
+  slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+
+// SUBMIT ALERT
+
+function validateForm() {
+
+    if (document.getElementsByClassName("fieldWidth").value == ______) { 
+
+    } else {
+      function onSubmit
+          alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
+    }
 }

@@ -73,9 +73,10 @@ input, textarea {
   width: 100%;
 }
 
-#emailcheck, #phonecheck {
-  margin-right: 7px;
+#submit{
+  margin-top: 15px;
 }
+
 
 
 /*LINK STYLING*/
@@ -117,15 +118,13 @@ a:hover {
 
 /* MENU PAGE STYLING*/
 .treat {
-  max-width: 250px;
-  max-height: 250px;
+  width: 250px;
+  height: 250px;
   border-radius: 25%;
-  align-self: center;
 }
 
 .treat:hover {
   transform: scale(1.25);
-  rotate: 35deg;
 }
 
 .menu-note {
@@ -141,6 +140,7 @@ ul .menu-items{
 
 .menu-header {
   margin-bottom: 0;
+  margin-top: 5px;
   padding-bottom: 0;
 }
 
@@ -201,25 +201,10 @@ ul .menu-items{
   background-color: #717171;
 }
 
-/* .mySlides {display: none}
-img {vertical-align: middle;} */
-
-
-
-
-
-
-
 
 
 
 /*MEDIA QUERIES*/
-@media (max-width: 699px) {
-  .treat {
-    display: none;
-  }
-}
-
 
 @media (min-width: 700px){
   /* 700px or wider */
@@ -236,22 +221,19 @@ img {vertical-align: middle;} */
     display: grid;
     max-width: 1000px;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 3px;
+    grid-gap: 5px;
+  }
+
+  .treat-mobile {
+    display: none;
+  }
+
+  /* INDEX GRID */
+  .grid-2col {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
   }
 
 }
-
-
-
-@media (min-width: 1000px){
-  /* 1000px or wider */
-  .main-nav, 
-  .nav {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-  }
-  
-}
-
-

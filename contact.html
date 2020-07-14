@@ -25,28 +25,29 @@
       
      <h3>Want to place an order? Have a question? Reach out to Treats by Jay using the form below to have someone get in touch with you.</h3>
      <div id="container">
-        <form class="contact-form">
+      <form class="contact-form">
         
-          <label for="name">Name:</label> 
-          <input class="fieldWidth" type="text" id="name" required="required">
+        <label for="name">Name:</label> 
+        <input class="fieldWidth" type="text" id="name" required="required">
 
-          <label for="name">Phone:</label> 
-          <input class="fieldWidth" type="phone" id="phone" placeholder="502-867-5309" required="required">
-    
-           <label for="email">Email:</label><br>
-           <input class="fieldWidth" type="email" id="email" placeholder="Your Email" required="required">
-           <br>
-           <label for="msg">Message:</label>
-           <textarea class="fieldWidth" id="msg" rows="10" required="required"></textarea>
+        <label for="name">Phone:</label> 
+        <input class="fieldWidth" type="phone" id="phone" placeholder="502-867-5309" required="required">
+  
+         <label for="email">Email:</label><br>
+         <input class="fieldWidth" type="email" id="email" placeholder="Your Email" required="required">
+         <br>
+         <label for="msg">Message:</label>
+         <textarea class="fieldWidth" id="msg" rows="10" required="required"></textarea>
 
-            <div class="checkboxes">
-              <label for="checkboxes">Contact Preference:<br>
-                <input type="checkbox" id="phonecheck" value="yes">Phone<br>
-                <input type="checkbox" id="emailcheck" value="yes">Email<br>
-              </label>
-            </div>
-            <input class="fieldWidth" type="submit" value="Submit">
-        </form>
+          <label for="contact">Contact Preference:</label>
+          <select id="contact" name="Contact Preference">
+            <optgroup label="Contact Preference">
+              <option alue="Email">Email</option>
+              <option value="Phone">Phone</option>
+            </optgroup>
+            </select>
+            <input class="fieldWidth" id="submit" type="submit" value="Submit" onclick="onSubmit()">
+      </form>
      </div>
     </main>
 
