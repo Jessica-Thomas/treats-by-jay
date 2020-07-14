@@ -25,6 +25,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+<<<<<<< HEAD
 
 
 // SUBMIT ALERT
@@ -41,3 +42,5 @@ function showSlides(n) {
 //           alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
 //     }
 // }
+=======
+>>>>>>> parent of b7fa7c8... updated some css

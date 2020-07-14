@@ -14,8 +14,15 @@
 }
 
 .body {
+<<<<<<< HEAD
   margin-left: 12px;
+=======
+  margin: 0 12px 0 12px
+>>>>>>> parent of b7fa7c8... updated some css
 }
+
+
+
 
 body {
   font-family: 'Oswald', sans-serif;
@@ -45,12 +52,22 @@ footer .copyright {
   margin: 5px;
 }
 
+<<<<<<< HEAD
 img .treat {
   display: flex;
   justify-self: center;
   vertical-align: center;
   object-position: center;
+=======
+
+
+/* MENU GRID */
+div .item {
+  margin: 10px;
+>>>>>>> parent of b7fa7c8... updated some css
 }
+
+
 
 /*CONTACT FORM*/
 .contact-form {
@@ -73,8 +90,8 @@ input, textarea {
   width: 100%;
 }
 
-#submit{
-  margin-top: 15px;
+#emailcheck, #phonecheck {
+  margin-right: 7px;
 }
 
 
@@ -125,6 +142,7 @@ a:hover {
 
 .treat:hover {
   transform: scale(1.25);
+  rotate: 35deg;
 }
 
 .menu-note {
@@ -196,6 +214,12 @@ ul .menu-items{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+<<<<<<< HEAD
+=======
+.dot-style{
+  text-align:center;
+}
+>>>>>>> parent of b7fa7c8... updated some css
 
 .active, .dot:hover {
   background-color: #6633ff;
@@ -228,12 +252,43 @@ ul .menu-items{
     display: none;
   }
 
-  /* INDEX GRID */
-  .grid-2col {
-    display: grid;
-    max-width: 900px;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 5px;
+  div .grid-treat {
+    align-self: center;
   }
 
+<<<<<<< HEAD
 }
+=======
+/* INDEX GRID */
+.grid-2col {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 5px;
+}
+
+
+/* ABOUT PAGE */
+
+.about-div {
+  display: inline-block;
+}
+
+.about {
+  width: 350px;
+  height: 250px;
+  border-radius: 25%;
+  float: right;
+}
+
+
+
+
+
+
+
+}
+
+
+
+>>>>>>> parent of b7fa7c8... updated some css
