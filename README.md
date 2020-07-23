@@ -9,7 +9,6 @@ Flexbox:
 
 JavaScript (in a separate file):
 -Image carousel on index page
--Alert upon clicking submit on contact page 
 
 -Media queries
 -Responsive to different screen sizes

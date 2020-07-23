@@ -31,7 +31,8 @@ function showSlides(n) {
 
 // function onSubmit() {
 
-//     if { 
+//     if (document.  { 
+//       What i want to say: If required fields are blank/missing, message below
 //           alert('Required field(s) missing. Check yo self')
 //     } else {
 //           alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
