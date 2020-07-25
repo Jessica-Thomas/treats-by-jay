@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>Treats By Jay</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/app.js"></script>
+  <script src="js/form.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -24,20 +24,22 @@
      <h1>Contact Jay!</h1>  
       
      <h3>Want to place an order? Have a question? Reach out to Treats by Jay using the form below to have someone get in touch with you.</h3>
+   
+   <!-- CONTACT FORM -->
      <div id="container">
         <form class="contact-form">
         
           <label for="name">Name:</label> 
-          <input class="fieldWidth" type="text" id="name" required="required">
+          <input class="fieldWidth" type="text" id="name">
 
           <label for="name">Phone:</label> 
-          <input class="fieldWidth" type="phone" id="phone" placeholder="502-867-5309" required="required">
+          <input class="fieldWidth" type="phone" id="phone" placeholder="502-867-5309">
     
            <label for="email">Email:</label><br>
-           <input class="fieldWidth" type="email" id="email" placeholder="Your Email" required="required">
+           <input class="fieldWidth" type="email" id="email" placeholder="Your Email">
            <br>
            <label for="msg">Message:</label>
-           <textarea class="fieldWidth" id="msg" rows="10" required="required"></textarea>
+           <textarea class="fieldWidth" id="msg" rows="10"></textarea>
 
             <label for="contact">Contact Preference:</label>
             <select id="contact" name="Contact Preference">
@@ -53,8 +55,6 @@
 
     <footer class="footer">
       <p class="copyright">Copyright 2020, Treats by Jay.   Treats by Jay is not responsible for expanding waistlines.</p>
-
-            <!-- insert some clickable social media buttons... align them to the R on the same line as the copyright -->
     </footer>
   </body>
   </html>

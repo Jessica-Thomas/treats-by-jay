@@ -27,14 +27,14 @@ function showSlides(n) {
 }
 
 
-// SUBMIT ALERT
+// FORM VALIDATION
 
-// function onSubmit() {
 
-//     if (document.  { 
-//       What i want to say: If required fields are blank/missing, message below
-//           alert('Required field(s) missing. Check yo self')
-//     } else {
-//           alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
-//     }
-// }
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
