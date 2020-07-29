@@ -25,21 +25,22 @@
       
      <h3>Want to place an order? Have a question? Reach out to Treats by Jay using the form below to have someone get in touch with you.</h3>
    
+    
    <!-- CONTACT FORM -->
      <div id="container">
-        <form class="contact-form">
+        <form class="contact-form" id="form" name="form" onsubmit="checkforBlankFields()" method="GET">
         
           <label for="name">Name:</label> 
           <input class="fieldWidth" type="text" id="name">
 
-          <label for="name">Phone:</label> 
-          <input class="fieldWidth" type="phone" id="phone" placeholder="502-867-5309">
+          <label for="phone">Phone:</label> 
+          <input class="fieldWidth" type="text" id="phone" placeholder="502-867-5309">
     
            <label for="email">Email:</label><br>
-           <input class="fieldWidth" type="email" id="email" placeholder="Your Email">
+           <input class="fieldWidth" type="text" id="email" placeholder="Your Email">
            <br>
            <label for="msg">Message:</label>
-           <textarea class="fieldWidth" id="msg" rows="10"></textarea>
+           <textarea class="fieldWidth" type="text" id="msg" rows="10" placeholder="Whatchu talkin 'bout"></textarea>
 
             <label for="contact">Contact Preference:</label>
             <select id="contact" name="Contact Preference">
@@ -48,7 +49,7 @@
                 <option value="Phone">Phone</option>
               </optgroup>
               </select>
-              <input class="fieldWidth" id="submit" type="submit" value="Submit" onclick="onSubmit()">
+              <input class="fieldWidth" id="submit" type="submit" value="Submit">
         </form>
      </div>
     </main>

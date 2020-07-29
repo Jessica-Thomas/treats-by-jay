@@ -9,7 +9,7 @@ Flexbox:
 
 JavaScript (in a separate file):
 -Image carousel on index page
-- form validation on contact page 
+-Form validation with alerts on contact page 
 
 -Media queries
 -Responsive to different screen sizes
