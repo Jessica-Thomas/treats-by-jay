@@ -28,7 +28,7 @@
     
    <!-- CONTACT FORM -->
      <div id="container">
-        <form class="contact-form" id="form" name="form" onsubmit="checkforBlankFields()" method="POST">
+        <form class="contact-form" id="form" name="form">
         
           <label for="name">Name:</label> 
           <input class="fieldWidth" type="text" id="name">
@@ -49,7 +49,7 @@
                 <option value="Phone">Phone</option>
               </optgroup>
               </select>
-              <input class="fieldWidth" id="submit" type="submit" value="Submit">
+              <input class="fieldWidth" id="submit" type="submit" value="Submit" onclick="checkforBlankFields()">
         </form>
      </div>
     </main>
