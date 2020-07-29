@@ -1,5 +1,5 @@
 // FORM VALIDATION
-    // If specified fields are empty, keep track of errors and append all to one alert-- alert will no longer be blank,  so alert will pop up with all messages and outline errored fields in red.
+    // If specified fields are empty, keep track of errors and append all to one alert-- alert will no longer be blank because the messages were combined, so alert will pop up with all messages and outline errored fields in red.
     // If no errors, then form submits and alert pops up stating someone will be in contact soon. 
 
 var errorMessage = "";
@@ -7,22 +7,22 @@ var errorMessage = "";
 function checkforBlankFields() {
     
     if (document.getElementsById('name').value == "") {
-        `${errorMessage} += Name is required`;
+        append`${errorMessage}Name is missing`;
         document.getElementsById('name').style.borderColor = "red";
         }
 
     if (document.getElementsById('phone').value == "") {
-        `${errorMessage} += Phone number is required`;
+        append`${errorMessage}Phone number is missing`;
         document.getElementsById('phone').style.borderColor = "red";
         }
           
     if (document.getElementsById('email').value == "") {
-        `${errorMessage} += Email address is required`;
+        append`${errorMessage}Email address is missing`;
         document.getElementsById('email').style.borderColor = "red";
         }
 
     if (document.getElementsById('msg').value == "") {
-        `${errorMessage} += Message to Jay is required`;
+        append`${errorMessage}Message to Jay is missing`;
         document.getElementsById('msg').style.borderColor = "red";
         }
 
@@ -33,5 +33,7 @@ function checkforBlankFields() {
         } else {
             alert('Thanks! Someone from Treats by Jay will reach out to you soon!')
         }
+
 }
+
 
