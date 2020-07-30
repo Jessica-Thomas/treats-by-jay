@@ -2,9 +2,10 @@
     // If specified fields are empty, keep track of errors and combine all to one alert-- alert will no longer be blank because the messages were strung together, so alert will pop up with all messages and outline errored fields in red.
     // If no errors, then form submits and alert pops up stating someone will be in contact soon. 
 
-var errorMessage = "";
 
 function checkforBlankFields() {
+    var errorMessage = "";
+
     
     if (document.getElementById("name").value == "") {
         errorMessage += 'HALT! Who goes here? Your name is missing. \n';
