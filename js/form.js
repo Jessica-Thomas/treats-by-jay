@@ -13,7 +13,7 @@ function checkforBlankFields() {
         }
 
     if (document.getElementById("phone").value == "") {
-        errorMessage += 'Talking on the phone sucks, I know. But your phone number is missing. \n';
+        errorMessage += 'Talking on the phone sucks, I know. But I need your phone number for when you ignore my emails. \n';
         document.getElementById("phone").style.border = "2px solid #7f36d5";
         }
           

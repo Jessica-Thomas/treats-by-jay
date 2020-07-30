@@ -37,6 +37,10 @@ footer .copyright {
 }
 
 
+p {
+  padding-top: 4px;
+}
+
 /* MENU GRID */
 div .item {
   margin: 10px;

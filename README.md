@@ -13,7 +13,7 @@ JavaScript (in a separate file):
 
 -Media queries
 -Responsive to different screen sizes
--CSS grid on menu page and index
+-CSS grid on menu page and index-- multiple columns or one column depending on screen size 
 
 -Commented out/organizational lines in CSS/HTML/JS
 -At least 3 CSS selectors 
