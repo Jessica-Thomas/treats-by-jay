@@ -8,7 +8,7 @@ function checkforBlankFields() {
 
     
     if (document.getElementById("name").value == "") {
-        errorMessage += 'HALT! Who goes here? Your name is missing. \n';
+        errorMessage += 'Stranger danger...  Your name is missing. \n';
         document.getElementById("name").style.border = "2px solid #7f36d5";
         }
 

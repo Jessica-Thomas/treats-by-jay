@@ -116,9 +116,6 @@ a:hover {
   border-radius: 25%;
 }
 
-.treat:hover {
-  transform: scale(1.25);
-}
 
 .menu-note {
   font-size: .9em;
@@ -225,6 +222,10 @@ ul .menu-items{
 
   .treat-mobile {
     display: none;
+  }
+
+  .treat:hover {
+    transform: scale(1.25);
   }
 
   /* INDEX GRID */
